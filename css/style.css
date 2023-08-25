@@ -1,0 +1,101 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #4a98f7;
+}
+.theApp {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.alarmContainer {
+  width: 500px;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 5px;
+  margin: 0px 30px;
+}
+.alarmContainer .title {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+.alarmHead {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.alarmHead img {
+  width: 180px;
+}
+.alarmContainer .clock {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.selection {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+.selection div {
+  display: block;
+  width: 120px;
+  border: 2px solid #e1dfdf;
+  border-radius: 5px;
+  padding: 10px 5px !important;
+  margin-bottom: 15px;
+}
+.selection div select {
+  width: 100%;
+  outline: none;
+  font-size: 20px;
+  border: none;
+}
+
+.theBtn {
+  width: 100%;
+  text-align: center;
+}
+.theBtn .setBtn {
+  width: 100%;
+  background-color: #4a98f7;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 20px;
+  color: #fff;
+  text-transform: capitalize;
+}
+/* global */
+.hidden {
+  pointer-events: none;
+  user-select: none;
+  opacity: 0.4;
+}
+/* global */
+
+@media (max-width:400px) {
+  .selection {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+    gap:5px
+}
+  .selection div{
+    width: 80px;
+  }
+}
